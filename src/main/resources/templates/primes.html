@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get your primes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="hero is-info is-large">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-3 has-text-black" th:text="'Primes up to ' + ${number} + ':'"></h1>
+                <p class="has-text-black" th:text="${primes}"></p>
+                <br>
+                <form action="/">
+                    <input class="button is-light" type="submit" value="Try Again">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
